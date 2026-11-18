@@ -8,8 +8,31 @@
 <meta property="og:title" content="Ansh — Birthday Protocol"><meta property="og:description" content="More than my brother. My bestest friend. Love you 3000."><meta property="og:image" content="/photos/00.jpg">
 <link rel="icon" href="/reactor.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css">
 <script src="/app.js" defer></script>
+<script src="/entrance.js" defer></script>
 </head>
 <body>
+
+<dialog id="suit-entrance" class="suit-entrance" aria-labelledby="entrance-title" aria-describedby="entrance-status">
+  <button class="entrance-skip" type="button">SKIP INTRO ↗</button>
+  <div class="entrance-grid" aria-hidden="true"></div>
+  <div class="entrance-content">
+    <p class="entrance-kicker"><span class="status-dot"></span> STARK INDUSTRIES / PERSONAL ARMOR</p>
+    <div class="helmet-stage" aria-label="Ansh revealed as his armored faceplate opens">
+      <div class="helmet-halo" aria-hidden="true"></div>
+      <svg class="helmet-shell" viewBox="0 0 320 440" aria-hidden="true"><defs><linearGradient id="shell-red" x2="1" y2="1"><stop stop-color="#651820"/><stop offset=".4" stop-color="#ce3d3d"/><stop offset=".65" stop-color="#48121b"/><stop offset="1" stop-color="#9d2731"/></linearGradient></defs><path d="M78 22 119 5H201L242 22 290 99 301 242 274 341 221 421H99L46 341 19 242 30 99Z" fill="url(#shell-red)" stroke="#dfad68" stroke-width="2"/><path d="M44 134 25 165 33 263 56 305M276 134 295 165 287 263 264 305" fill="none" stroke="#e6bc77" stroke-width="4"/></svg>
+      <div class="helmet-face"><img src="/photos/00.jpg" alt="Ansh smiling behind the opening faceplate" fetchpriority="high"></div>
+      <svg class="helmet-faceplate" viewBox="0 0 320 440" aria-hidden="true"><defs><linearGradient id="armor-gold" x1="0" y1="0" x2="1" y2=".8"><stop stop-color="#826035"/><stop offset=".2" stop-color="#e9c888"/><stop offset=".42" stop-color="#fff0bd"/><stop offset=".6" stop-color="#af8246"/><stop offset=".84" stop-color="#dfb970"/><stop offset="1" stop-color="#77532c"/></linearGradient><linearGradient id="armor-shade" x2="1"><stop stop-color="#3d2819"/><stop offset=".5" stop-color="#bd925b"/><stop offset="1" stop-color="#523422"/></linearGradient><filter id="eye-glow"><feGaussianBlur stdDeviation="3"/></filter></defs><path d="M87 32 118 15H202L233 32 257 95 251 192 229 226 221 316 199 363H121L99 316 91 226 69 192 63 95Z" fill="url(#armor-gold)" stroke="#fae0a3" stroke-width="1.5"/><path d="M87 32 101 92 88 160 91 226 69 192 63 95ZM233 32 219 92 232 160 229 226 251 192 257 95Z" fill="url(#armor-shade)"/><path d="M118 15 127 71H193L202 15M101 92 127 71H193L219 92M99 316 121 294H199L221 316" fill="none" stroke="#725231" stroke-width="2"/><path d="M85 174 144 187 139 204 91 195ZM235 174 176 187 181 204 229 195Z" fill="#79efff" filter="url(#eye-glow)"/><path d="M85 174 144 187 139 204 91 195ZM235 174 176 187 181 204 229 195Z" fill="#d3fcff"/><path d="M121 335H199M129 343H191" stroke="#4e3422" stroke-width="4"/><path d="M160 79V160" stroke="#fff1c1" opacity=".3"/></svg>
+      <svg class="helmet-jaw" viewBox="0 0 320 440" aria-hidden="true"><path d="M70 281 99 316 121 363H199L221 316 250 281 254 332 216 403H104L66 332Z" fill="#9e2932" stroke="#e0ab67" stroke-width="2"/><path d="M104 369 122 388H198L216 369" fill="none" stroke="#42131a" stroke-width="7"/></svg>
+      <span class="helmet-coordinate left">MK_3000<br>ARMOR ONLINE</span><span class="helmet-coordinate right">PILOT VERIFIED<br>ANSH</span>
+    </div>
+    <p id="entrance-status" class="entrance-status" aria-live="polite">J.A.R.V.I.S. / UNLOCKING FACEPLATE…</p>
+    <h2 id="entrance-title">TIME FOR <span>WAR.</span></h2>
+    <p class="entrance-subtitle">Birthday protocol activated. Your moment starts now.</p>
+    <button class="primary entrance-enter" type="button" disabled>GET IN <span>↗</span></button>
+  </div>
+  <p class="entrance-bottom">ONE LEGEND. NO BACKUP REQUIRED. / LOVE YOU 3000</p>
+</dialog>
+
 <a class="skip" href="#main">Skip to tribute</a>
 <header class="header"><a class="brand" href="#" aria-label="Birthday Protocol home"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="21"/><circle cx="24" cy="24" r="15"/><path d="M24 13 35 31H13Z"/></svg><span>STARK<span class="brand-sub">BIRTHDAY DIVISION</span></span></a><nav aria-label="Main navigation"><a href="#archive">The archive <span>↗</span></a><button class="sound-toggle" aria-label="Enable sound" aria-pressed="false"><span class="sound-bars"><i></i><i></i><i></i><i></i></span><span class="sound-label">SOUND OFF</span></button></nav></header>
 <main id="main">

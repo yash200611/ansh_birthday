@@ -12,6 +12,7 @@ Import this repository into Vercel. `vercel.json` configures `npm run build` and
 
 ## Included
 
+- Animated armor entrance: an opening faceplate reveals Ansh, then “TIME FOR WAR” and “GET IN” lead into the app. Includes skip, Escape, keyboard focus handling, and reduced-motion support.
 - Responsive landing page, arc-reactor portrait, full-screen film player and MP4 download.
 - Seven chapter controls, a 15-photo perspective carousel, swipe and keyboard navigation, photo lightbox and reduced-motion support.
 - Original photos in `source/photos`, web photos in `public/photos`, supplied audio and editable rendering scripts.

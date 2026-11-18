@@ -1,6 +1,6 @@
 import { stat, readFile } from 'node:fs/promises';
 const root = new URL('../public/', import.meta.url);
-for (const name of ['index.html','styles.css','app.js','reactor.svg','media/Ansh_Birthday_Protocol.mp4']) {
+for (const name of ['index.html','styles.css','app.js','entrance.js','reactor.svg','media/Ansh_Birthday_Protocol.mp4']) {
   const info = await stat(new URL(name, root));
   if (!info.isFile() || !info.size) throw new Error(`Missing or empty static asset: ${name}`);
 }
