@@ -1,0 +1,9 @@
+.git
+source
+scripts/render_tribute.py
+scripts/mix_audio.py
+scripts/requirements.txt
+build
+output
+node_modules
+dist
