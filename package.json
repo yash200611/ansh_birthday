@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "node scripts/serve.mjs",
     "build": "node scripts/build.mjs",
-    "preview": "node scripts/serve.mjs dist"
+    "preview": "node scripts/serve.mjs public"
   },
-  "engines": { "node": ">=20" }
+  "engines": {
+    "node": "22.x"
+  }
 }

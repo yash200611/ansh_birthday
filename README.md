@@ -4,11 +4,11 @@ A cinematic birthday website and 45-second vertical film for Ansh. Built with HT
 
 ## Local development
 
-Run `npm run dev` and open http://127.0.0.1:3000. Requires Node.js 20+.
+Run `npm run dev` and open http://127.0.0.1:3000. Requires Node.js 22+.
 
 ## Vercel
 
-Import this repository into Vercel. `vercel.json` configures `npm run build` and output directory `dist`. No environment variables are needed.
+Import this repository into Vercel. `vercel.json` configures `npm run build` and output directory `public`. No environment variables are needed.
 
 ## Included
 
@@ -47,3 +47,5 @@ npm run build
 ```
 
 The renderer uses macOS Arial fonts at `/System/Library/Fonts/Supplemental/`; adjust `fontdir` on other systems. Vercel builds do not require Python or these fonts.
+
+The deploy directory is checked into Git as `public/`. The build validates those static files; it does not rely on generating a separate output folder.

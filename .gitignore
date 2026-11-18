@@ -6,3 +6,4 @@ build/
 output/
 __pycache__/
 .env*
+.vercel

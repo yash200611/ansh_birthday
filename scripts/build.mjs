@@ -1,8 +1,10 @@
-import { mkdir, copyFile, cp, rm, stat } from 'node:fs/promises';
-await stat(new URL('../public/media/Ansh_Birthday_Protocol.mp4', import.meta.url));
-const root = new URL('../', import.meta.url);
-await rm(new URL('dist/', root), { recursive: true, force: true });
-await mkdir(new URL('dist/', root), { recursive: true });
-for (const name of ['index.html', 'styles.css', 'app.js']) await copyFile(new URL(name, root), new URL(`dist/${name}`, root));
-await cp(new URL('public/', root), new URL('dist/', root), { recursive: true });
-console.log('Built dist/ — ready for Vercel.');
+import { stat, readFile } from 'node:fs/promises';
+const root = new URL('../public/', import.meta.url);
+for (const name of ['index.html','styles.css','app.js','reactor.svg','media/Ansh_Birthday_Protocol.mp4']) {
+  const info = await stat(new URL(name, root));
+  if (!info.isFile() || !info.size) throw new Error(`Missing or empty static asset: ${name}`);
+}
+for(let i=0;i<15;i++) await stat(new URL(`photos/${String(i).padStart(2,'0')}.jpg`,root));
+const html=await readFile(new URL('index.html',root),'utf8');
+if(!html.includes('Birthday Protocol')) throw new Error('Birthday page is missing');
+console.log('Validated public/: page, scripts, 15 photos and the birthday film.');
